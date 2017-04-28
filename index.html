@@ -10,8 +10,14 @@
 </head>
 
 <body>
-    <p>websocket took <span class="response-time"></span> seconds to return message</p>
-    <p><span class="city-name"></span> has high of <span class="high-temp"></span>º and low of <span class="low-temp"></span>º</p>
+    <form class="city-search">
+        <input type="text" class="city-search__input">
+        <button type="submit">Search</button>
+    </form>
+    <div class="data-container">
+        <p><span class="city-name"></span> has high of <span class="high-temp"></span>º and low of <span class="low-temp"></span>º</p>
+        <p>websocket took <span class="response-time"></span> seconds to return message</p>
+    </div>
 
     <script src="build/bundle.js"></script>
 </body>
