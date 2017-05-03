@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../node_modules/reset-css/_reset";
+@import "icons";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  justify-content: center;
+}
+
+.weather-container__loader {
+  font-size: 10px;
+}
+
+.weather-container {
+  align-items: center;
+  background: #161616;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  width: 320px;
+}
+
+.city-search__input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  height: 25px;
+  padding: 5px 0;
+  width: 280px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.city-search__submit {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+}
+
+.data-container__city {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+  .city-name {
+    font-size: 40px;
+    text-shadow: 0 0 10px #56ccf2;
+  }
+
+.websocket-mesage {
+  color: #161616;
+  font-size: 10px;
+  padding-top: 10px;
+}

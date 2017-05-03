@@ -10,14 +10,23 @@
 </head>
 
 <body>
-    <form class="city-search">
-        <input type="text" class="city-search__input">
-        <button type="submit">Search</button>
-    </form>
-    <div class="data-container">
-        <p><span class="city-name"></span> has high of <span class="high-temp"></span>º and low of <span class="low-temp"></span>º</p>
-        <p>websocket took <span class="response-time"></span> seconds to return message</p>
+    <div class="weather-container">
+        <div class="icon sunny weather-container__loader">
+          <div class="sun">
+            <div class="rays"></div>
+          </div>
+        </div>
+
+        <form class="city-search">
+            <input type="text" class="city-search__input" placeholder="Enter City Name">
+            <button type="submit" class="city-search__submit"><i class="fa fa-search"></i></button>
+        </form>
+        <div class="data-container">
+            <div class="data-container__icon"></div>
+            <p class="data-container__city"><span class="city-name"></span><br>has high of <span class="high-temp"></span>º and <br>low of <span class="low-temp"></span>º</p>
+        </div>
     </div>
+    <p class="websocket-mesage">websocket took <span class="response-time"></span> seconds to return message</p>
 
     <script src="build/bundle.js"></script>
 </body>
